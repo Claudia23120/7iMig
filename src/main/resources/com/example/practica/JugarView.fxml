@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica.JugarController">
+   <center>
+         <GridPane fx:id="btn_check" alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="165.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="307.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="121.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+               <Pane GridPane.columnIndex="1">
+                  <children>
+                     <ImageView fx:id="card_console" fitHeight="133.0" fitWidth="102.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_console1" fitHeight="133.0" fitWidth="96.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_console2" fitHeight="133.0" fitWidth="96.0" layoutX="74.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_console3" fitHeight="133.0" fitWidth="96.0" layoutX="115.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_console4" fitHeight="133.0" fitWidth="96.0" layoutX="146.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_console5" fitHeight="133.0" fitWidth="96.0" layoutX="170.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_console6" fitHeight="133.0" fitWidth="96.0" layoutX="211.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               </Pane>
+               <Pane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <children>
+                     <ImageView fx:id="card_player" fitHeight="133.0" fitWidth="96.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_player1" fitHeight="133.0" fitWidth="96.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_player2" fitHeight="133.0" fitWidth="96.0" layoutX="74.0" pickOnBounds="true" preserveRatio="true" />
+                     <ImageView fx:id="card_player3" fitHeight="133.0" fitWidth="96.0" layoutX="115.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_player4" fitHeight="133.0" fitWidth="96.0" layoutX="148.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_player5" fitHeight="133.0" fitWidth="96.0" layoutX="188.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card_player6" fitHeight="133.0" fitWidth="96.0" layoutX="211.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               </Pane>
+               <Button fx:id="menu" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonMenu" prefHeight="28.0" prefWidth="153.0" style="-fx-background-color: #da4c0e; -fx-background-radius: 16;" text="Back to Desktop" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Verdana Bold" size="13.0" />
+                  </font>
+               </Button>
+               <Button fx:id="jugar" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="65.0" mnemonicParsing="false" onAction="#buttonJugar" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: #da4c0e; -fx-background-radius: 16;" text="Try Again" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Verdana Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="plantar" contentDisplay="CENTER" mnemonicParsing="false" onAction="#plantarse" prefHeight="33.0" prefWidth="81.0" style="-fx-background-color: #da4c0e; -fx-background-radius: 16;" text="Check" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Verdana Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="demanar" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#demanarCarta" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #da4c0e; -fx-background-radius: 16;" text="+1 Card" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Verdana Bold" size="14.0" />
+                  </font>
+               </Button>
+            
+                   <Label fx:id="maJugadorL" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="313.0" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                  <font>
+                     <Font name="Verdana Bold" size="17.0" />
+                  </font>
+               </Label>
+                <Label fx:id="maBancaL" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="332.0" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                  <font>
+                     <Font name="Verdana Bold" size="17.0" />
+                  </font>
+               </Label>
+                <Label fx:id="missatge" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="311.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="nom" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="1.0" prefHeight="18.0" prefWidth="110.0" text="aaaa" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="1.0" prefHeight="18.0" prefWidth="69.0" text="Nom">
+                     <font>
+                        <Font name="Verdana Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="27.0" prefHeight="18.0" prefWidth="135.0" text="Partides Jugades">
+                     <font>
+                        <Font name="Verdana Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="53.0" prefHeight="18.0" prefWidth="149.0" text="Partides Guanyades">
+                     <font>
+                        <Font name="Verdana Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="78.0" prefHeight="18.0" prefWidth="149.0" text="Partides Perdudes">
+                     <font>
+                        <Font name="Verdana Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="jugades" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="102.0" layoutY="27.0" prefHeight="18.0" prefWidth="52.0" text="aaaa" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="guanyades" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="103.0" layoutY="53.0" prefHeight="18.0" prefWidth="52.0" text="aaaa" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="perdudes" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="103.0" layoutY="77.0" prefHeight="18.0" prefWidth="52.0" text="aaaa" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="101.0" prefHeight="18.0" prefWidth="149.0" text="Punts">
+                     <font>
+                        <Font name="Verdana Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="punts" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="103.0" layoutY="102.0" prefHeight="18.0" prefWidth="52.0" text="aaaa" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </BorderPane.margin>
+         </GridPane>
+   </center>
+   <stylesheets>
+      <URL value="@../../../css/jugar.css" />
+   </stylesheets>
+</BorderPane>
